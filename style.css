@@ -40,8 +40,15 @@ nav {
 }
 
 nav a img {
-    width: 150px;
+    width: 100px;
 }
+
+nav a img:hover {
+    width: 150px;
+    transition: .3s;
+}
+
+
 
 .nav-links {
     text-align: right;
@@ -62,8 +69,9 @@ nav a img {
 
 .nav-links ul li a::after {
     content: '';
+    width: 0%;
     height: 2px;
-    background-color: red;
+    background-color: rgb(48, 205, 233);
     margin-top: 5px;
     display: block;
 
@@ -71,7 +79,7 @@ nav a img {
 
 .nav-links ul li a:hover::after {
     width: 100%;
-    transition: .3s;
+    transition: .8s;
 }
 
 .nav-links .bi {
@@ -88,7 +96,7 @@ nav a img {
 .text-box {
     width: 90%;
     position: absolute;
-    color: var(--text-color);
+    color: white;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -97,11 +105,14 @@ nav a img {
 
 .text-box h1 {
     font-size: 60px;
+    color: rgb(242, 250, 250);
 }
 
 .text-box p {
     margin: 20px 40px;
+    color: aliceblue;
 }
+
 
 .hero-btn {
     display: inline-block;
@@ -138,15 +149,21 @@ nav a img {
 }
 
 .row {
+    
     width: 100%;
-    margin-top: 0px;
+    margin-top: px;
     display: flex;
     justify-content: space-between;
-    padding: 10PX;
+    padding: 10pX;
+    justify-content: center;
     align-items: center;
+    gap: 10px;
+
+   
 }
 
 .course-col {
+    
     background-color: rgb(233, 229, 222);
     margin-bottom: 10px;
     box-sizing: border-box;
@@ -192,14 +209,14 @@ nav a img {
 }
 
 .layer:hover {
-    background-color: rgba(190, 109, 38, 0.4);
+    background-color: rgba(220, 222, 224, 0.4);
     transition: .3s;
 }
 
 .layer h3 {
     width: 100%;
     font-weight: 25px;
-    color: white;
+    color: rgb(19, 18, 18);
     position: absolute;
     bottom: 0;
     transition: .3s;
